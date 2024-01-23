@@ -130,6 +130,7 @@ function registerVMs {
 
 
 function main($arguments) {
+    Set-PowerCLIConfiguration -InvalidCertificateAction Ignore
     try {
         Connect-VIServer -Server $vcenter_ip -Protocol https -User $vcenter_admin -Password $vcenter_pass -ErrorAction 'Stop'
     } catch [Exception] {

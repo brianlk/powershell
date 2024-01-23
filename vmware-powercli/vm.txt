@@ -3,4 +3,3 @@ abc2
 abc3
 abc4
 no-vmware-tools
-local-repo
